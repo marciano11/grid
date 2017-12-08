@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+@font-face {
+
+  font-family: 'Gunplay', sans-serif;
+
+  src: url("font/gunplay/Gunplay-Regular.tff.woff"); }
+
+* {
+
+  margin: 0; }
+
+
+
+button {
+
+  cursor: pointer;
+
+  outline: none; }
+
+
+
+.container {
+
+  font-family: 'Oswald', sans-serif;
+
+  max-width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 2fr auto;
+
+  grid-template-rows: auto auto 2fr 3fr; }
+
+  .container__account {
+
+    grid-column: 1/all;
+
+    grid-row: 1;
+
+    text-align: right;
+
+    background-color: #f2f2f2;
+
+    padding: 0.5em 0;
+
+    padding-right: 1em; }
+
+    .container__account p {
+
+      cursor: pointer; }
+
+  .container__nav {
+
+    grid-column: 1/all;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr auto; }
+
+    .container__nav__list {
+
+      list-style-type: none;
+
+      margin: 0;
+
+      padding: 0;
+
+      overflow: hidden;
+
+      grid-column: 2;
+
+      max-width: 100%; }
+
+      .container__nav__list__item {
+
+        display: inline-grid;
+
+        padding: 12px 20px;
+
+        cursor: pointer; }
+
+    .container__nav__logo {
+
+      height: auto;
+
+      max-width: 100%;
+
+      margin-top: -2.5em;
+
+      grid-column: 1;
+
+      position: absolute; }
+
+    .container__nav__boodschappenlijst {
+
+      grid-column: 3;
+
+      padding-right: 1em; }
+
+      .container__nav__boodschappenlijst__button {
+
+        background-color: #f8a230;
+
+        color: #fff;
+
+        font-family: "oswald",arial,sans-serif;
+
+        font-size: 100%;
+
+        padding: 0.5em 1em 0.5em 1em;
+
+        text-transform: uppercase;
+
+        cursor: pointer;
+
+        display: inline-block;
+
+        line-height: normal;
+
+        text-align: center;
+
+        vertical-align: baseline;
+
+        white-space: nowrap;
+
+        border: none;
+
+        height: 100%; }
+
+  .container__banner {
+
+    grid-column: 1/all;
+
+    margin-bottom: 1em; }
+
+    .container__banner__img {
+
+      max-width: 100%; }
+
+  .container__ingredienten {
+
+    grid-column: 1;
+
+    grid-row: 4;
+
+    padding-left: 1em; }
+
+    .container__ingredienten__title {
+
+      border-bottom: 3px dashed orange; }
+
+    .container__ingredienten__list {
+
+      list-style-type: none;
+
+      margin: 0;
+
+      padding: 0;
+
+      overflow: hidden;
+
+      margin-bottom: 1em; }
+
+      .container__ingredienten__list__item {
+
+        border-bottom: 1px groove lightgray; }
+
+    .container__ingredienten__button {
+
+      background-color: #f8a230;
+
+      color: #fff;
+
+      font-family: "oswald",arial,sans-serif;
+
+      font-size: 100%;
+
+      padding: 0.5em 1em 0.5em 1em;
+
+      text-transform: uppercase;
+
+      cursor: pointer;
+
+      display: inline-block;
+
+      line-height: normal;
+
+      text-align: center;
+
+      vertical-align: baseline;
+
+      white-space: nowrap;
+
+      border: none; }
+
+  .container__receptInfo {
+
+    font-family: 'Gunplay', sans-serif;
+
+    padding-left: 1em;
+
+    grid-column: 2/3;
+
+    grid-row: 4; }
+
+    .container__receptInfo__title {
+
+      padding-right: 1em;
+
+      display: grid;
+
+      grid-template-columns: 3fr 1fr 1fr;
+
+      grid-column-gap: 0.5em;
+
+      margin-top: -0.38em;
+
+      padding-bottom: 0.2em;
+
+      border-bottom: 3px dashed orange; }
+
+      .container__receptInfo__title__head {
+
+        color: orange; }
+
+      .container__receptInfo__title__save {
+
+        background-color: #f8a230;
+
+        color: #fff;
+
+        font-family: "oswald",arial,sans-serif;
+
+        font-size: 100%;
+
+        text-transform: uppercase;
+
+        cursor: pointer;
+
+        display: inline-block;
+
+        line-height: normal;
+
+        text-align: center;
+
+        vertical-align: baseline;
+
+        white-space: nowrap;
+
+        border: none; }
+
+      .container__receptInfo__title__print {
+
+        background-color: black;
+
+        color: #fff;
+
+        font-family: "oswald",arial,sans-serif;
+
+        font-size: 100%;
+
+        text-transform: uppercase;
+
+        cursor: pointer;
+
+        display: inline-block;
+
+        line-height: normal;
+
+        text-align: center;
+
+        vertical-align: baseline;
+
+        white-space: nowrap;
+
+        border: none; }
+
+    .container__receptInfo__button {
+
+      background-color: #cccccc;
+
+      border-radius: 3px;
+
+      box-sizing: border-box;
+
+      color: #fff;
+
+      display: inline-block;
+
+      height: 40px;
+
+      max-width: 100%;
+
+      overflow: hidden;
+
+      padding: 7px 15px 9px;
+
+      text-decoration: none;
+
+      text-overflow: ellipsis;
+
+      transition: all 0.25s ease-in 0s, all 0.25s ease-out 0s;
+
+      white-space: nowrap; }
+
+    .container__receptInfo__strong {
+
+      margin: 0.2em 0;
+
+      display: block; }
+
+    .container__receptInfo__kop {
+
+      margin: 1em 0; }
+
+    .container__receptInfo__list {
+
+      margin: 0.5em 0;
+
+      list-style: none; }
+
+  .container__footer {
+
+    grid-column: 1/all;
+
+    grid-row: 5; }
+
+    .container__footer__widgets {
+
+      padding: 0 5em 10em 5em;
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+      .container__footer__widgets__item1 {
+
+        grid-column: 1; }
+
+      .container__footer__widgets__item2 {
+
+        grid-column: 2; }
+
+      .container__footer__widgets__item3 {
+
+        grid-column: 3; }
+
+      .container__footer__widgets__item4 {
+
+        grid-column: 4; }
+
+    .container__footer__bottom {
+
+      max-width: 100%;
+
+      background-color: #F59225;
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr; }
+
+      .container__footer__bottom__right {
+
+        grid-column: 2; }
+
+        .container__footer__bottom__right__img {
+
+          max-width: 100%; }
